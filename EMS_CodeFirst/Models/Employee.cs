@@ -7,6 +7,7 @@ namespace EMS_CodeFirst.Models;
 
 [Index(nameof(Email),IsUnique=true)]
 public class Employee{
+    [Key]
     public int EmpId{get;set;}
     [MaxLength(30)]
     public string Name{get;set;}
