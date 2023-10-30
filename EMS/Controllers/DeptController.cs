@@ -18,7 +18,7 @@ public IActionResult Create(Department department){
     if(ModelState.IsValid){
         context.Departments.Add(department);
         context.SaveChanges();
-        return RedirectToAction("List";)
+        return RedirectToAction("List");
 
     }
     return View();
