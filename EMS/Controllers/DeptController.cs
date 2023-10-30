@@ -7,8 +7,18 @@ public class DeptController:Controller{
         context = _context;
     }
 public IActionResult List(){
-    var data=context.Departments.ToList();
-    return View();
+    //var data=context.Departments.ToList();
+    List<Department> data= null;
+    try{
+        data=context.Departments.ToList();
+        if(data.Count==0)
+        throw new Exception();
+    }
+    catch(System.Exception ex){
+        ViewBag.ErrorMessage="0 records present";
+        return View("Error");
+    }
+    return View(data);
 }
 public IActionResult Create(){
     return View();
