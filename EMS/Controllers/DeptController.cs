@@ -7,6 +7,20 @@ public class DeptController:Controller{
         context = _context;
     }
 public IActionResult List(){
+    var data=context.Departments.ToList();
+    return View();
+}
+public IActionResult Create(){
+    return View();
+}
+[HttpPost]
+public IActionResult Create(Department department){
+    if(ModelState.IsValid){
+        context.Departments.Add(department);
+        context.SaveChanges();
+        return RedirectToAction("List";)
+
+    }
     return View();
 }
 }
