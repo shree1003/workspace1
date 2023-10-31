@@ -83,3 +83,10 @@
 /home/coder/project/workspace/EMS/bin/Debug/net6.0/Microsoft.AspNetCore.Server.Kestrel.Https.dll
 /home/coder/project/workspace/EMS/bin/Debug/net6.0/Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll
 /home/coder/project/workspace/EMS/bin/Debug/net6.0/Newtonsoft.Json.dll
+/home/coder/project/workspace/EMS/bin/Debug/net6.0/Microsoft.AspNetCore.JsonPatch.dll
+/home/coder/project/workspace/EMS/bin/Debug/net6.0/Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+/home/coder/project/workspace/EMS/bin/Debug/net6.0/Microsoft.AspNetCore.Razor.Language.dll
+/home/coder/project/workspace/EMS/bin/Debug/net6.0/Microsoft.CodeAnalysis.dll
+/home/coder/project/workspace/EMS/bin/Debug/net6.0/Microsoft.CodeAnalysis.CSharp.dll
+/home/coder/project/workspace/EMS/bin/Debug/net6.0/Microsoft.CodeAnalysis.Razor.dll
+/home/coder/project/workspace/EMS/bin/Debug/net6.0/Newtonsoft.Json.Bson.dll
