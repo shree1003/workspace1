@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using EMS.Models;
 namespace EMS.Controllers;
 public class EmpController:Controller{
     private readonly EmsDbContext context;
@@ -14,6 +16,7 @@ public class EmpController:Controller{
         ViewBag.DeptId= new SelectList(context.Departments,"Id","DeptName");
         return View();
     }
+    [HttpPost]
     public IActionResult Create(Employee emp){
         if(ModelState.IsValid){
             context.Employees.Add(emp);
